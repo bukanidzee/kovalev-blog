@@ -1,0 +1,45 @@
+{
+  "name": "my_blog",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "MERN based blog application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mern",
+    "express",
+    "blog",
+    "react"
+  ],
+  "author": "Kovalev Aleksandr <bukanidzee@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.8",
+    "cors": "^2.8.5",
+    "cyrillic-to-translit-js": "^3.2.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/config": "^3.3.0",
+    "@types/express": "^4.17.14",
+    "@types/express-fileupload": "^1.4.1",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/mongoose": "^5.11.97",
+    "@types/uuid": "^8.3.4",
+    "concurrently": "^7.5.0",
+    "nodemon": "^2.0.20"
+  }
+}
